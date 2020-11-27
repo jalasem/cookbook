@@ -2,4 +2,4 @@
 
 A react-native cookbook app (nothing serious)
 
-![Screenshot](screenshot.png)
+![Screenshot](spec.png)
