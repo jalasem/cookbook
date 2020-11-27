@@ -23,11 +23,15 @@ export default function ResultGrid() {
     );
   };
 
-  // const { width: screenWidth } = Dimensions.get("screen");
-  // const itemWidth = (screenWidth - 50) / 2;
+  const { width: screenWidth } = Dimensions.get("screen");
+  const itemWidth = (screenWidth - 60) / 2;
 
   const Item = ({ color }) => {
-    return <View style={[styles.result, { backgroundColor: color }]} />;
+    return (
+      <View
+        style={[styles.result, { backgroundColor: color, width: itemWidth }]}
+      />
+    );
   };
 
   return (
@@ -49,6 +53,7 @@ const styles = StyleSheet.create({
     flexWrap: "wrap",
     paddingHorizontal: 5,
     paddingLeft: 20,
+    paddingRight: 10,
     marginBottom: 20,
   },
   result: {
